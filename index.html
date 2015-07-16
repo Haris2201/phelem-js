@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phelem.js Demo</title>
+
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+        <script type="text/javascript" src="./phelem.0.0.1.min.js"></script>
+    </head>
+    <body data-phelem-events="scroll" data-phelem-mass="4">
+        <section>
+			<h1>Phelem.js</h1>
+			<h2>Awesome web experience powered by physics</h2>
+            <p><strong>Phelem.js</strong> (short for <strong>ph</strong>ysical <strong>elem</strong>ents) is a simple JavaScript library that transforms DOM elements into (simulated) physical objects which are then affected by events such as scrolling, dragging, writing and mouse movements; the effect looks and feels awesome!</p>
+            <div class="version">Phelem.js is currently in version 0.0.1 and in development!</div>
+            <p>Take a look at the Phelem's <a href="https://github.com/Haris2201/phelem-js">GitHub repository</a> for more information, the latest version and the download link.</p>
+            <p><a href="./demo.html">Click here</a> for a demo where the document's body is <em>Phelemized</em>.</p>
+        </section>
+        <section>
+            <h3 data-phelem="true" data-phelem-events="scroll" data-phelem-mass="2" class="lorem"><span>Lorem</span> <span>Ipsum</span></h3>
+            <aside>Scroll</aside>
+            <code>
+                &lt;h3 <strong>data-phelem="true" data-phelem-events="scroll" data-phelem-mass="2"</strong> ...&gt;...&lt;/h3&gt;
+            </code>
+            <p class="lorem"><span>Lorem</span> <span>ipsum</span> <span>dolor</span> <span>sit</span> <span>amet,</span> <span>consectetur</span> <span>adipisicing</span> <span>elit,</span> <span>sed</span> <span>do</span> <span>eiusmod</span> <span>tempor</span> <span>incididunt</span> <span>ut</span> <span>labore</span> <span>et</span> <span>dolore</span> <span>magna</span> <span>aliqua.</span> <span>Ut</span> <span>enim</span> <span>ad</span> <span>minim</span> <span>veniam,</span> <span>quis</span> <span>nostrud</span> <span>exercitation</span> <span>ullamco</span> <span>laboris</span> <span>nisi</span> <span>ut</span> <span>aliquip</span> <span>ex</span> <span>ea</span> <span>commodo</span> <span>consequat.</span> <span>Duis</span> <span>aute</span> <span>irure</span> <span>dolor</span> <span>in</span> <span>reprehenderit</span> <span>in</span> <span>voluptate</span> <span>velit</span> <span>esse</span> <span>cillum</span> <span>dolore</span> <span>eu</span> <span>fugiat</span> <span>nulla</span> <span>pariatur.</span> <span>Excepteur</span> <span>sint</span> <span>occaecat</span> <span>cupidatat</span> <span>non</span> <span>proident,</span> <span>sunt</span> <span>in</span> <span>culpa</span> <span>qui</span> <span>officia</span> <span>deserunt</span> <span>mollit</span> <span>anim</span> <span>id</span> <span>est</span> <span>laborum.</span></p>
+			<div class="image" data-phelem="true" data-phelem-mass="3" data-phelem-events="scroll">image</div>
+            <code>
+                &lt;div ... <strong>data-phelem="true" data-phelem-mass="3" data-phelem-events="scroll"</strong>&gt;...&lt;/div&gt;
+            </code>
+        </section>
+        <section>
+            <h3 class="lorem"><span>dolor</span> <span>sit</span> <span>amet</span></h3>
+            <aside>Keyboard</aside>
+            <p class="lorem"><span>Lorem</span> <span>ipsum</span> <span>dolor</span> <span>sit</span> <span>amet,</span> <span>consectetur</span> <span>adipisicing</span> <span>elit,</span> <span>sed</span> <span>do</span> <span>eiusmod</span> <span>tempor</span> <span>incididunt</span> <span>ut</span> <span>labore</span> <span>et</span> <span>dolore</span> <span>magna</span> <span>aliqua.</span> <span>Ut</span> <span>enim</span> <span>ad</span> <span>minim</span> <span>veniam,</span> <span>quis</span> <span>nostrud</span> <span>exercitation</span> <span>ullamco</span> <span>laboris</span> <span>nisi</span> <span>ut</span> <span>aliquip</span> <span>ex</span> <span>ea</span> <span>commodo</span> <span>consequat.</span> <span>Duis</span> <span>aute</span> <span>irure</span> <span>dolor</span> <span>in</span> <span>reprehenderit</span> <span>in</span> <span>voluptate</span> <span>velit</span> <span>esse</span> <span>cillum</span> <span>dolore</span> <span>eu</span> <span>fugiat</span> <span>nulla</span> <span>pariatur.</span> <span>Excepteur</span> <span>sint</span> <span>occaecat</span> <span>cupidatat</span> <span>non</span> <span>proident,</span> <span>sunt</span> <span>in</span> <span>culpa</span> <span>qui</span> <span>officia</span> <span>deserunt</span> <span>mollit</span> <span>anim</span> <span>id</span> <span>est</span> <span>laborum.</span></p>
+            <input type="text" placeholder="Write here to see what happens" data-phelem="true" data-mass="5" data-phelem-events="key"/>
+            <code>
+                &lt;input type="text" ... <strong>data-phelem="true" data-mass="5" data-phelem-events="key"</strong>/&gt;
+            </code>
+        </section>
+        <section>
+            <h3 class="lorem"><span>consectetur</span> <span>adipisicing</span></h3>
+            <aside>Drag</aside>
+            <div class="image" data-phelem="true" data-phelem-events="drag">drag me</div>
+            <code>
+                &lt;div ... <strong>data-phelem="true" data-phelem-events="drag"</strong>&gt;image&lt;/div&gt;
+            </code>
+            <p class="lorem"><span>.murobal</span> <span>tse</span> <span>di</span> <span>mina</span> <span>tillom</span> <span>tnuresed</span> <span>aiciffo</span> <span>iuq</span> <span>apluc</span> <span>ni</span> <span>tnus</span> <span>,tnediorp</span> <span>non</span> <span>tatadipuc</span> <span>taceacco</span> <span>tnis</span> <span>ruetpecxE</span> <span>.rutairap</span> <span>allun</span> <span>taiguf</span> <span>ue</span> <span>erolod</span> <span>mullic</span> <span>esse</span> <span>tilev</span> <span>etatpulov</span> <span>ni</span> <span>tiredneherper</span> <span>ni</span> <span>rolod</span> <span>eruri</span> <span>etua</span> <span>siuD</span> <span>.tauqesnoc</span> <span>odommoc</span> <span>ae</span> <span>xe</span> <span>piuqila</span> <span>tu</span> <span>isin</span> <span>sirobal</span> <span>ocmallu</span> <span>noitaticrexe</span> <span>durtson</span> <span>siuq</span> <span>,mainev</span> <span>minim</span> <span>da</span> <span>mine</span> <span>tU</span> <span>.auqila</span> <span>angam</span> <span>erolod</span> <span>te</span> <span>erobal</span> <span>tu</span> <span>tnudidicni</span> <span>ropmet</span> <span>domsuie</span> <span>od</span> <span>des</span> <span>,tile</span> <span>gnicisipida</span> <span>rutetcesnoc</span> <span>,tema</span> <span>tis</span> <span>rolod</span> <span>muspi</span> <span>meroL</span></p>
+        </section>
+        <section>
+            <h3 class="lorem"><span>elit,</span> <span>sed</span> <span>do</span> <span>eiusmod</span></h3>
+            <aside>Mouse</aside>
+            <p class="lorem"><span>Lorem</span> <span>ipsum</span> <span>dolor</span> <span>sit</span> <span>amet,</span> <span>consectetur</span> <span>adipisicing</span> <span>elit,</span> <span>sed</span> <span>do</span> <span>eiusmod</span> <span>tempor</span> <span>incididunt</span> <span>ut</span> <span>labore</span> <span>et</span> <span>dolore</span> <span>magna</span> <span>aliqua.</span> <span>Ut</span> <span>enim</span> <span>ad</span> <span>minim</span> <span>veniam,</span> <span>quis</span> <span>nostrud</span> <span>exercitation</span> <span>ullamco</span> <span>laboris</span> <span>nisi</span> <span>ut</span> <span>aliquip</span> <span>ex</span> <span>ea</span> <span>commodo</span> <span>consequat.</span> <span>Duis</span> <span>aute</span> <span>irure</span> <span>dolor</span> <span>in</span> <span>reprehenderit</span> <span>in</span> <span>voluptate</span> <span>velit</span> <span>esse</span> <span>cillum</span> <span>dolore</span> <span>eu</span> <span>fugiat</span> <span>nulla</span> <span>pariatur.</span> <span>Excepteur</span> <span>sint</span> <span>occaecat</span> <span>cupidatat</span> <span>non</span> <span>proident,</span> <span>sunt</span> <span>in</span> <span>culpa</span> <span>qui</span> <span>officia</span> <span>deserunt</span> <span>mollit</span> <span>anim</span> <span>id</span> <span>est</span> <span>laborum.</span></p>
+            <div class="image" data-phelem="true" data-phelem-events="mouse">mouse</div>
+            <code>
+                &lt;div ... <strong>data-phelem="true" data-phelem-events="mouse"</strong>&gt;mouse&lt;/div&gt;
+            </code>
+        </section>
+    </body>
+</html>

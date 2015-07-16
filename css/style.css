@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+body {
+    background:         #111;
+    color:              #111;
+    position:           absolute;
+
+    width:              100%;
+    height:             100%;
+    margin:				0;
+
+    cursor:             default;
+    font-family:        'Open Sans', 'Arial', sans-serif;
+    font-size:          0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:             0;
+}
+
+section {
+    background:			#eee;
+    position:			relative;
+
+    width:				500px;
+    height:				auto;
+    margin:				50px auto;
+    padding:			50px;
+
+    border-radius:		5px;
+}
+
+h1 {
+    font-size:			50px;
+    font-weight:        300;
+}
+
+h2 {
+    margin:				10px 0;
+
+    font-size:			22px;
+    font-weight:        300;
+}
+
+div.version {
+    color:              #444;
+
+    margin:             10px auto;
+    padding:            5px 10px;
+
+    border:             1px solid #a22;
+    border-left:        10px solid #a22;
+    font-size:          16px;
+}
+
+a {
+    color:              #04f;
+
+    text-decoration:    none;
+}
+
+h3 {
+    display:            inline-block;
+
+    font-size:			30px;
+}
+
+h3.lorem > span {
+    background:			#111;
+    color:				#111;
+
+    border-radius:		2px;
+}
+
+aside {
+    color:              #bbb;
+    position:           relative;
+
+    top:                -17px;
+    right:              0;
+
+    font-size:          50px;
+    float:              right;
+}
+
+p {
+    margin:				20px 0;
+
+    font-size:			16px;
+}
+
+p.lorem {
+    line-height:        30px;
+    word-spacing:       10px;
+    word-wrap:          break-word;
+}
+
+p.lorem > span {
+    background:			#111;
+    color:				#111;
+
+    border-radius:		2px;
+}
+
+div.image {
+    background:			#111;
+    color:				#fff;
+
+    margin:             20px auto;
+    padding:			150px 0;
+
+    border-radius:		5px;
+    font-size:			100px;
+    text-align:			center;
+}
+
+input[type="text"] {
+    background:         #111;
+    color:              #fff;
+    display:            block;
+
+    width:              460px;
+    padding:            20px;
+
+    border:             0;
+    border-radius:      5px;
+    font-size:          16px;
+    outline:            none !important;
+}
+
+code {
+    background:         #111;
+    color:              #fff;
+    display:            block;
+
+    margin:             20px auto;
+    padding:            20px 10px;
+
+    border-radius:      5px;
+    font-size:          14px;
+    word-wrap:          normal;
+}
+
+code > strong {
+    color:              #0f0;
+}
+
+code > a {
+    color:              #0df;
+}
